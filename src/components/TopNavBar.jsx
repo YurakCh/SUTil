@@ -6,7 +6,7 @@ export default function TopNavBar({ mode, setMode, fiscalYear, setFiscalYear, on
     <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
       <div className="flex justify-between items-center w-full px-6 py-3 max-w-full mx-auto">
         <div className="flex items-center gap-10">
-          <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); }} className="text-xl font-extrabold tracking-tighter text-primary headline-font hover:opacity-80 transition-opacity cursor-pointer">SUTil</a>
+          <a href="#" onClick={(e) => { e.preventDefault(); window.location.hash = ''; }} className="text-xl font-extrabold tracking-tighter text-primary headline-font hover:opacity-80 transition-opacity cursor-pointer">SUTil</a>
           <nav className="hidden md:flex items-center gap-8">
             <NavItem 
               active={mode === 'decimo3'} 
