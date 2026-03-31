@@ -7,7 +7,7 @@ export default function LandingPage({ onEnter }) {
       <nav className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl sticky top-0 z-50 shadow-sm dark:shadow-none transition-all">
         <div className="flex justify-between items-center w-full px-6 py-3 max-w-full mx-auto">
           <div className="flex items-center gap-8">
-            <span className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300 font-headline">SUTil</span>
+            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); }} className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300 font-headline hover:opacity-80 transition-opacity">SUTil</a>
             <div className="hidden md:flex gap-6">
               <a href="#tutoriales" className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors font-medium tracking-tight">Tutoriales</a>
               <a href="#contacto" className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors font-medium tracking-tight">Soporte</a>
@@ -264,11 +264,11 @@ export default function LandingPage({ onEnter }) {
           <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
             <div className="flex items-center gap-2 mb-1">
                <span className="material-symbols-outlined text-primary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
-               <span className="font-extrabold text-white font-headline text-2xl tracking-wide">SUTil</span>
+               <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); }} className="font-extrabold text-white font-headline text-2xl tracking-wide hover:opacity-80 transition-opacity cursor-pointer">SUTil</a>
             </div>
             <span className="text-slate-400 text-sm font-medium leading-relaxed">
                Automatización contable de nómina SUT.<br/>
-               Desarrollado por .
+               Desarrollado por <a href="https://yurakchalen.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-container">Yurak Chalen</a>.
             </span>
           </div>
           
@@ -291,7 +291,6 @@ export default function LandingPage({ onEnter }) {
                  <div className="w-[16px] h-[6px] bg-[#FFD100]"></div>
                  <div className="w-[16px] h-[3px] bg-[#005CE6]"></div>
                  <div className="w-[16px] h-[3px] bg-[#EF3340]"></div>
-                 {/* Micro-escudo para diferenciarnos de Colombia */}
                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[4px] h-[5px] bg-[#89B9C7] border-[0.5px] border-[#8a681c] rounded-[1px] shadow-sm"></div>
                </div>
                ECUADOR
