@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import LandingPage from './components/LandingPage.jsx'
-import CookieConsent from './components/CookieConsent.jsx'
-import { injectMaze } from './logic/maze-loader'
 import './index.css'
 
 function Router() {
@@ -35,12 +33,7 @@ function Router() {
      window.location.hash = '#/app';
   };
 
-  return (
-    <>
-      {hash === '#/app' && authorized ? <App /> : <LandingPage onEnter={handleEnterApp} />}
-      <CookieConsent onAccept={injectMaze} />
-    </>
-  );
+  return hash === '#/app' && authorized ? <App /> : <LandingPage onEnter={handleEnterApp} />;
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
