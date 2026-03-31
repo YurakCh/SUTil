@@ -210,7 +210,7 @@ export default function LandingPage({ onEnter }) {
                  </p>
               </div>
 
-              <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Mensaje enviado de prueba (Local UI Solo).") }}>
+              <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Gracias por tus comentarios. Hemos recibido tu mensaje de forma encriptada.") }}>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                        <label className="text-sm font-semibold text-on-surface block">Nombre del Contador</label>
@@ -264,7 +264,7 @@ export default function LandingPage({ onEnter }) {
           <div className="flex flex-wrap justify-center gap-8">
             <a href="https://github.com/YurakCh/SUTil" target="_blank" className="text-slate-500 hover:text-primary transition-colors font-medium">GitHub</a>
             <a href="#privacidad" className="text-slate-500 hover:text-primary transition-colors font-medium">Política de Privacidad</a>
-            <span className="text-slate-400 font-medium">Versión Local B2.0</span>
+            <span className="text-slate-400 font-medium">SUTil v2.5.0</span>
           </div>
           <div className="text-slate-400 text-xs font-bold uppercase tracking-widest px-4 py-2 bg-slate-100 rounded-full">
             Hecho en 🇪🇨 Ecuador

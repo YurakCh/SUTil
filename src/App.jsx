@@ -382,12 +382,12 @@ export default function App() {
         <div className="flex justify-between items-center px-6 py-3">
           <div className="flex items-center gap-4">
             <span className="font-extrabold text-primary headline-font text-sm">SUTil</span>
-            <span className="text-slate-400 text-[10px] font-medium border-l border-slate-200 pl-4 uppercase tracking-wider">v2.5 Premium • Ecuador 2025</span>
+            <span className="text-slate-400 text-[10px] font-medium border-l border-slate-200 pl-4 uppercase tracking-wider">v2.5.0 • Ecuador 2025</span>
           </div>
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Local Computing Only</span>
+              <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Entorno Local Seguro</span>
             </div>
           </div>
         </div>
