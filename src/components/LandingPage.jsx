@@ -10,7 +10,7 @@ export default function LandingPage({ onEnter }) {
     const formData = new FormData(e.target);
     
     try {
-      const response = await fetch("https://formsubmit.co/ajax/yurakchalenp@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/formsutil@yurakchalen.com", {
         method: "POST",
         headers: { 
             'Content-Type': 'application/json',
