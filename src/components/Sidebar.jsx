@@ -56,7 +56,7 @@ export default function Sidebar({ employees, mode }) {
             Este reporte se procesa directamente en tu computador. La información que aquí trabajas es de conocimiento único y exclusivo de la empresa para la que gestionas este reporte.
           </p>
           <p className="text-[9px] mt-4 text-indigo-400 font-medium">
-            Este servicio es OpenSource y tu o tu equipo de IT puede revisar y descargar el repositorio de GitHub <a href="#" className="underline">aquí</a>
+            Este servicio es OpenSource y tu o tu equipo de IT puede revisar y descargar el repositorio de GitHub <a href="https://github.com/YurakCh/SUTil" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:text-primary-container transition-colors">aquí</a>
           </p>
         </div>
       </div>
