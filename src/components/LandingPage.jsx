@@ -1,6 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function LandingPage({ onEnter }) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const formData = new FormData(e.target);
+    
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/yurakchalenp@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+      });
+      
+      if (response.ok) {
+        setSubmitSuccess(true);
+      } else {
+        alert("Ocurrió un error al enviar el mensaje. Intente de nuevo.");
+      }
+    } catch (error) {
+      alert("Error de conexión. Verifique su internet.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="bg-surface font-body text-on-surface min-h-screen">
       {/* TopNavBar */}
@@ -210,25 +240,37 @@ export default function LandingPage({ onEnter }) {
                  </p>
               </div>
 
-              <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Gracias por tus comentarios. Hemos recibido tu mensaje de forma encriptada.") }}>
-                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                       <label className="text-sm font-semibold text-on-surface block">Nombre del Contador</label>
-                       <input type="text" required className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Juan Pérez" />
-                    </div>
-                    <div className="space-y-2">
-                       <label className="text-sm font-semibold text-on-surface block">Correo de respuesta</label>
-                       <input type="email" required className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="juan@contabilidad.ec" />
-                    </div>
-                 </div>
-                 <div className="space-y-2">
-                    <label className="text-sm font-semibold text-on-surface block">Sugerencia o Descripción del Problema</label>
-                    <textarea required rows="4" className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" placeholder="El archivo CSV del SUT de la variante de Costa exporta el campo..."></textarea>
-                 </div>
-                 <button type="submit" className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2">
-                    <span className="material-symbols-outlined">send</span> Enviar Reporte
-                 </button>
-              </form>
+              {submitSuccess ? (
+                <div className="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl text-center space-y-4 shadow-sm">
+                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                     <span className="material-symbols-outlined text-3xl">check_circle</span>
+                  </div>
+                  <h3 className="font-headline text-xl font-bold text-emerald-800">¡Mensaje Recibido Encriptado!</h3>
+                  <p className="text-emerald-700 font-medium">Gracias por contactarnos. Cerraremos el ticket a la brevedad posible.</p>
+                  <button onClick={() => setSubmitSuccess(false)} className="mt-4 px-6 py-2 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition-colors">Enviar otro mensaje</button>
+                </div>
+              ) : (
+                <form className="space-y-6" onSubmit={handleFormSubmit}>
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                         <label className="text-sm font-semibold text-on-surface block">Nombre del Contador</label>
+                         <input type="text" name="name" required className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Juan Pérez" />
+                      </div>
+                      <div className="space-y-2">
+                         <label className="text-sm font-semibold text-on-surface block">Correo de respuesta</label>
+                         <input type="email" name="email" required className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="juan@contabilidad.ec" />
+                      </div>
+                   </div>
+                   <div className="space-y-2">
+                      <label className="text-sm font-semibold text-on-surface block">Sugerencia o Descripción del Problema</label>
+                      <textarea name="message" required rows="4" className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" placeholder="El archivo CSV del SUT de la variante de Costa exporta el campo..."></textarea>
+                   </div>
+                   <button type="submit" disabled={isSubmitting} className="w-full bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-wait">
+                      {isSubmitting ? <span className="material-symbols-outlined animate-spin shadow-none">refresh</span> : <span className="material-symbols-outlined">send</span>}
+                      {isSubmitting ? "Enviando Seguro..." : "Enviar Reporte"}
+                   </button>
+                </form>
+              )}
            </div>
         </section>
 
