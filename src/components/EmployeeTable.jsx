@@ -311,12 +311,7 @@ export default function EmployeeTable({
           </div>
         </div>
         <div className="flex gap-2">
-          {/* Simple Pagination Buttons */}
-          {[1, 2, 3].map(p => (
-            <button key={p} className={`w-8 h-8 rounded-xl font-black text-xs transition-all ${p === 1 ? 'bg-primary text-white shadow-lg shadow-primary/30' : 'bg-white text-slate-400 border border-slate-200 hover:border-primary hover:text-primary'}`}>
-              {p}
-            </button>
-          ))}
+          {/* Pagination disabled - SUTil utilizes absolute vertical scroll for performance validation */}
         </div>
       </div>
     </div>
