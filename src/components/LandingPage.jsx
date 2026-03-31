@@ -72,7 +72,7 @@ export default function LandingPage({ onEnter }) {
               <div className="flex flex-wrap gap-4">
                 <button 
                   onClick={onEnter}
-                  className="bg-gradient-to-r from-primary to-surface-container-lowest text-on-surface px-8 py-4 border border-outline-variant/30 rounded-xl font-bold text-lg hover:opacity-90 transition-all active:scale-95 shadow-sm">
+                  className="bg-gradient-to-r from-primary to-surface-container-lowest border-none outline-none text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition-all active:scale-95 shadow-sm text-center">
                   Ir a la App
                 </button>
               </div>
@@ -102,29 +102,29 @@ export default function LandingPage({ onEnter }) {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Step 1 */}
-              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 shadow-sm border border-outline-variant/20">
-                <div className="mb-5 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-primary text-3xl font-bold">person_add</span>
+              <div className="bg-surface-container-lowest p-8 rounded-3xl flex flex-col items-start hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-primary shadow-sm hover:shadow-xl">
+                <div className="mb-6 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-on-surface text-3xl font-bold">person_add</span>
                 </div>
-                <h3 className="font-headline text-xl font-bold mb-3 text-on-surface">Carga Manual o Plantilla</h3>
+                <h3 className="font-headline text-xl font-extrabold mb-3 text-on-surface">Carga Manual o Plantilla</h3>
                 <p className="text-on-surface-variant leading-relaxed">Agregue colaboradores uno a uno usando la interfaz fluida, o descargue la plantilla universal de SUTil y escríbalos en Excel.</p>
               </div>
               
               {/* Step 2 */}
-              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 shadow-sm border border-outline-variant/20">
-                <div className="mb-5 flex items-center justify-center">
+              <div className="bg-surface-container-lowest p-8 rounded-3xl flex flex-col items-start hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-secondary shadow-sm hover:shadow-xl">
+                <div className="mb-6 flex items-center justify-center">
                   <span className="material-symbols-outlined text-on-surface text-3xl font-bold">csv</span>
                 </div>
-                <h3 className="font-headline text-xl font-bold mb-3 text-on-surface">Importación Mágica</h3>
+                <h3 className="font-headline text-xl font-extrabold mb-3 text-on-surface">Importación Mágica</h3>
                 <p className="text-on-surface-variant leading-relaxed">Cargue los XLS/CSV de su nómina antigua. Nuestra heurística reordena automáticamente los datos y reestructura los Nombres ecuatorianos.</p>
               </div>
               
               {/* Step 3 */}
-              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 shadow-sm border border-outline-variant/20">
-                <div className="mb-5 flex items-center justify-center">
+              <div className="bg-surface-container-lowest p-8 rounded-3xl flex flex-col items-start hover:-translate-y-2 transition-all duration-300 border-b-4 border-transparent hover:border-tertiary shadow-sm hover:shadow-xl">
+                <div className="mb-6 flex items-center justify-center">
                   <span className="material-symbols-outlined text-on-surface text-3xl font-bold">picture_as_pdf</span>
                 </div>
-                <h3 className="font-headline text-xl font-bold mb-3 text-on-surface">Extracción NATIVA PDF</h3>
+                <h3 className="font-headline text-xl font-extrabold mb-3 text-on-surface">Extracción NATIVA PDF</h3>
                 <p className="text-on-surface-variant leading-relaxed">Lea e interprete instantáneamente constancias gubernamentales en PDF. El motor deduce los montos automáticamente para generar validaciones cruzadas.</p>
               </div>
             </div>
@@ -173,16 +173,14 @@ export default function LandingPage({ onEnter }) {
                    </div>
                 </div>
              </div>
-             <div className="lg:w-1/2 w-full">
-                <div className="bg-surface-container-high p-4 rounded-3xl shadow-inner isolate relative aspect-video flex items-center justify-center cursor-pointer group hover:bg-surface-container-highest transition-colors">
-                   <div className="bg-white/90 backdrop-blur w-20 h-20 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                      <span className="material-symbols-outlined text-primary text-4xl ml-2">play_arrow</span>
-                   </div>
-                   <span className="absolute bottom-6 font-semibold text-slate-500">Tutorial Rápido (Próximamente)</span>
-                </div>
-             </div>
-          </div>
-        </section>
+             <div className="lg:w-1/2 w-full flex items-center justify-center p-8">
+                 <div className="w-full aspect-video rounded-3xl border-2 border-dashed border-outline-variant/30 flex flex-col items-center justify-center bg-surface-container-lowest/30 shadow-none hover:bg-surface-container-low/50 transition-colors">
+                    <span className="material-symbols-outlined text-outline-variant text-5xl mb-4">smart_display</span>
+                    <p className="text-outline-variant font-medium text-sm">Videotutorial Próximamente</p>
+                 </div>
+              </div>
+           </div>
+         </section>
 
         {/* Open-Source & Privacy Section */}
         <section id="privacidad" className="py-20 px-6 overflow-hidden bg-surface-container-low">
