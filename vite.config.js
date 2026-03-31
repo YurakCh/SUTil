@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/SUTil/', // GitHub Pages Project Name Repository Path
+  base: './', // Use relative paths for better compatibility with custom domains and subdirectories
 })
