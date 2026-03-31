@@ -268,7 +268,7 @@ export default function LandingPage({ onEnter }) {
             </div>
             <span className="text-slate-400 text-sm font-medium leading-relaxed">
                Automatización contable de nómina SUT.<br/>
-               Desarrollado en código abierto para Ecuador.
+               Desarrollado por .
             </span>
           </div>
           
@@ -285,8 +285,14 @@ export default function LandingPage({ onEnter }) {
           </div>
           
           <div className="flex items-center gap-3">
-             <div className="text-slate-300 text-[10px] font-black uppercase tracking-widest px-6 py-4 bg-slate-950/50 rounded-2xl shadow-inner border border-slate-800 flex items-center gap-2">
-               Hecho en <span className="text-base">🇪🇨</span> Ecuador
+             <div className="text-slate-300 text-[10px] font-black uppercase tracking-widest px-6 py-4 bg-slate-950/50 rounded-2xl shadow-inner border border-slate-800 flex items-center gap-3">
+               HECHO EN 
+               <div className="flex flex-col overflow-hidden rounded-[2px] shadow-md shadow-black/20 opacity-90 grayscale-0 hover:grayscale-0 transition-all cursor-crosshair">
+                 <div className="w-[14px] h-[5px] bg-[#FFD100]"></div>
+                 <div className="w-[14px] h-[2.5px] bg-[#005CE6]"></div>
+                 <div className="w-[14px] h-[2.5px] bg-[#EF3340]"></div>
+               </div>
+               ECUADOR
              </div>
           </div>
         </div>
