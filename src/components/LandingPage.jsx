@@ -53,7 +53,7 @@ export default function LandingPage({ onEnter }) {
                 <img 
                   alt="Dashboard Preview" 
                   className="rounded-lg shadow-lg w-full object-cover border-4 border-white/50" 
-                  src="/sutil_dashboard_mockup.png" 
+                  src="./sutil_dashboard_mockup.png" 
                 />
               </div>
               <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
