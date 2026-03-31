@@ -144,7 +144,7 @@ export default function LandingPage({ onEnter }) {
                 </div>
              </div>
              <div className="lg:w-1/2 w-full">
-                <div className="bg-surface-container-high p-4 rounded-3xl shadow-inner isolate aspect-video flex items-center justify-center cursor-pointer group hover:bg-surface-container-highest transition-colors">
+                <div className="bg-surface-container-high p-4 rounded-3xl shadow-inner isolate relative aspect-video flex items-center justify-center cursor-pointer group hover:bg-surface-container-highest transition-colors">
                    <div className="bg-white/90 backdrop-blur w-20 h-20 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                       <span className="material-symbols-outlined text-primary text-4xl ml-2">play_arrow</span>
                    </div>
@@ -255,19 +255,39 @@ export default function LandingPage({ onEnter }) {
       </main>
 
       {/* Footer */}
-      <footer className="bg-surface-container-lowest relative z-10 w-full border-t border-slate-200 py-10 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col items-center md:items-start gap-1">
-            <span className="font-extrabold text-slate-900 font-headline text-lg">SUTil</span>
-            <span className="text-slate-500 text-sm font-medium">SUTil - Tu SUT ya. Open-source para Ecuador.</span>
+      <footer className="bg-slate-900 border-t border-slate-800 py-16 px-6 relative z-10 w-full overflow-hidden">
+        {/* Subtle decorative glow */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10 translate-x-12 -translate-y-12"></div>
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-container/5 rounded-full blur-3xl -z-10 -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+          <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
+            <div className="flex items-center gap-2 mb-1">
+               <span className="material-symbols-outlined text-primary text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>
+               <span className="font-extrabold text-white font-headline text-2xl tracking-wide">SUTil</span>
+            </div>
+            <span className="text-slate-400 text-sm font-medium leading-relaxed">
+               Automatización contable de nómina SUT.<br/>
+               Desarrollado en código abierto para Ecuador.
+            </span>
           </div>
-          <div className="flex flex-wrap justify-center gap-8">
-            <a href="https://github.com/YurakCh/SUTil" target="_blank" className="text-slate-500 hover:text-primary transition-colors font-medium">GitHub</a>
-            <a href="#privacidad" className="text-slate-500 hover:text-primary transition-colors font-medium">Política de Privacidad</a>
-            <span className="text-slate-400 font-medium">SUTil v2.5.0</span>
+          
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+            <a href="https://github.com/YurakCh/SUTil" target="_blank" rel="noopener noreferrer" className="text-slate-300 hover:text-white transition-colors font-semibold flex items-center gap-2 bg-slate-800/50 hover:bg-slate-800 px-5 py-2.5 rounded-xl border border-slate-700/50">
+               <span className="material-symbols-outlined text-[18px]">code</span>
+               GitHub
+            </a>
+            <a href="#privacidad" className="text-slate-300 hover:text-white transition-colors font-semibold flex items-center gap-2 bg-slate-800/50 hover:bg-slate-800 px-5 py-2.5 rounded-xl border border-slate-700/50">
+               <span className="material-symbols-outlined text-[18px]">policy</span>
+               Privacidad
+            </a>
+            <span className="text-slate-500 font-bold border-l border-slate-700 pl-6 md:pl-8 py-2 ml-2 md:ml-4">v2.5.0</span>
           </div>
-          <div className="text-slate-400 text-xs font-bold uppercase tracking-widest px-4 py-2 bg-slate-100 rounded-full">
-            Hecho en 🇪🇨 Ecuador
+          
+          <div className="flex items-center gap-3">
+             <div className="text-slate-300 text-[10px] font-black uppercase tracking-widest px-6 py-4 bg-slate-950/50 rounded-2xl shadow-inner border border-slate-800 flex items-center gap-2">
+               Hecho en <span className="text-base">🇪🇨</span> Ecuador
+             </div>
           </div>
         </div>
       </footer>
