@@ -65,7 +65,7 @@ export default function Sidebar({ employees, mode }) {
                <p className="text-[11px] font-bold text-on-surface">{SUTIL_TIPS[currentTip].date}</p>
              </div>
           </div>
-          <a href="https://sut.trabajo.gob.ec/" target="_blank" rel="noopener noreferrer" className="w-full py-2 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-widest rounded hover:bg-black transition-colors active:scale-95 shadow-lg flex justify-center items-center gap-2">
+          <a href="https://salarios.trabajo.gob.ec/" target="_blank" rel="noopener noreferrer" className="w-full py-2 bg-slate-900 text-white text-[10px] font-bold uppercase tracking-widest rounded hover:bg-black transition-colors active:scale-95 shadow-lg flex justify-center items-center gap-2">
             Ingresar al SUT Oficial <span className="material-symbols-outlined text-[14px]">open_in_new</span>
           </a>
         </div>
