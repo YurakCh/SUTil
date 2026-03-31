@@ -287,10 +287,12 @@ export default function LandingPage({ onEnter }) {
           <div className="flex items-center gap-3">
              <div className="text-slate-300 text-[10px] font-black uppercase tracking-widest px-6 py-4 bg-slate-950/50 rounded-2xl shadow-inner border border-slate-800 flex items-center gap-3">
                HECHO EN 
-               <div className="flex flex-col overflow-hidden rounded-[2px] shadow-md shadow-black/20 opacity-90 grayscale-0 hover:grayscale-0 transition-all cursor-crosshair">
-                 <div className="w-[14px] h-[5px] bg-[#FFD100]"></div>
-                 <div className="w-[14px] h-[2.5px] bg-[#005CE6]"></div>
-                 <div className="w-[14px] h-[2.5px] bg-[#EF3340]"></div>
+               <div className="relative flex flex-col overflow-hidden rounded-[2px] shadow-md shadow-black/20 opacity-90 grayscale-0 hover:grayscale-0 transition-all cursor-crosshair">
+                 <div className="w-[16px] h-[6px] bg-[#FFD100]"></div>
+                 <div className="w-[16px] h-[3px] bg-[#005CE6]"></div>
+                 <div className="w-[16px] h-[3px] bg-[#EF3340]"></div>
+                 {/* Micro-escudo para diferenciarnos de Colombia */}
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[4px] h-[5px] bg-[#89B9C7] border-[0.5px] border-[#8a681c] rounded-[1px] shadow-sm"></div>
                </div>
                ECUADOR
              </div>
