@@ -60,8 +60,8 @@ export default function LandingPage({ onEnter }) {
         <section className="relative overflow-hidden pt-20 pb-24 lg:pt-32 lg:pb-32 px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative z-10">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-xs font-semibold mb-6 tracking-wide uppercase">
-                Sistema Unificado del Trabajo
+              <div className="text-on-surface text-sm font-bold mb-6 tracking-wide uppercase">
+                SISTEMA UNIFICADO DEL TRABAJO
               </div>
               <h1 className="font-headline font-extrabold text-6xl md:text-7xl lg:text-8xl tracking-tighter text-on-surface mb-6 leading-none">
                 Tu SUT ya.
@@ -72,7 +72,7 @@ export default function LandingPage({ onEnter }) {
               <div className="flex flex-wrap gap-4">
                 <button 
                   onClick={onEnter}
-                  className="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all active:scale-95 shadow-md hover:shadow-lg">
+                  className="bg-gradient-to-r from-primary to-surface-container-lowest text-on-surface px-8 py-4 border border-outline-variant/30 rounded-xl font-bold text-lg hover:opacity-90 transition-all active:scale-95 shadow-sm">
                   Ir a la App
                 </button>
               </div>
@@ -102,27 +102,27 @@ export default function LandingPage({ onEnter }) {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Step 1 */}
-              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 border-b-4 border-transparent hover:border-primary shadow-sm hover:shadow-xl">
-                <div className="bg-primary-fixed w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-primary text-3xl">person_add</span>
+              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 shadow-sm border border-outline-variant/20">
+                <div className="mb-5 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-primary text-3xl font-bold">person_add</span>
                 </div>
                 <h3 className="font-headline text-xl font-bold mb-3 text-on-surface">Carga Manual o Plantilla</h3>
                 <p className="text-on-surface-variant leading-relaxed">Agregue colaboradores uno a uno usando la interfaz fluida, o descargue la plantilla universal de SUTil y escríbalos en Excel.</p>
               </div>
               
               {/* Step 2 */}
-              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 border-b-4 border-transparent hover:border-primary shadow-sm hover:shadow-xl">
-                <div className="bg-secondary-container w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-secondary text-3xl">csv</span>
+              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 shadow-sm border border-outline-variant/20">
+                <div className="mb-5 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-on-surface text-3xl font-bold">csv</span>
                 </div>
                 <h3 className="font-headline text-xl font-bold mb-3 text-on-surface">Importación Mágica</h3>
                 <p className="text-on-surface-variant leading-relaxed">Cargue los XLS/CSV de su nómina antigua. Nuestra heurística reordena automáticamente los datos y reestructura los Nombres ecuatorianos.</p>
               </div>
               
               {/* Step 3 */}
-              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 border-b-4 border-transparent hover:border-primary shadow-sm hover:shadow-xl">
-                <div className="bg-tertiary-fixed w-14 h-14 rounded-full flex items-center justify-center mb-6">
-                  <span className="material-symbols-outlined text-tertiary text-3xl">picture_as_pdf</span>
+              <div className="bg-surface-container-lowest p-8 rounded-2xl flex flex-col items-start hover:-translate-y-1 transition-all duration-300 shadow-sm border border-outline-variant/20">
+                <div className="mb-5 flex items-center justify-center">
+                  <span className="material-symbols-outlined text-on-surface text-3xl font-bold">picture_as_pdf</span>
                 </div>
                 <h3 className="font-headline text-xl font-bold mb-3 text-on-surface">Extracción NATIVA PDF</h3>
                 <p className="text-on-surface-variant leading-relaxed">Lea e interprete instantáneamente constancias gubernamentales en PDF. El motor deduce los montos automáticamente para generar validaciones cruzadas.</p>
