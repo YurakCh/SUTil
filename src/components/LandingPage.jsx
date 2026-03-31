@@ -33,26 +33,32 @@ export default function LandingPage({ onEnter }) {
 
   return (
     <div className="bg-surface font-body text-on-surface min-h-screen">
+      {/* Beta Notice Banner */}
+      <div className="bg-slate-100/50 border-b border-slate-200 text-slate-500 py-2 px-6 text-center text-xs font-bold tracking-tight">
+        🚀 Modo Beta: SUTil aprende de tu uso para refinar la herramienta. Tu información personal sigue 100% segura y privada.
+      </div>
+
       {/* TopNavBar */}
-      <nav className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl sticky top-0 z-50 shadow-sm dark:shadow-none transition-all">
-        <div className="flex justify-between items-center w-full px-6 py-3 max-w-full mx-auto">
-          <div className="flex items-center gap-8">
-            <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); }} className="text-2xl font-bold tracking-tighter text-blue-800 dark:text-blue-300 font-headline hover:opacity-80 transition-opacity">SUTil</a>
-            <div className="hidden md:flex gap-6">
-              <a href="#tutoriales" className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors font-medium tracking-tight">Tutoriales</a>
-              <a href="#contacto" className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors font-medium tracking-tight">Soporte</a>
-              <a href="#privacidad" className="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors font-medium tracking-tight">Privacidad</a>
+      <nav className="bg-slate-800 sticky top-0 z-50 shadow-lg transition-all">
+        <div className="flex justify-between items-center w-full px-6 py-4 max-w-full mx-auto">
+          <div className="flex items-center gap-10">
+            <div className="flex items-center gap-2">
+              <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); }} className="text-2xl font-black tracking-tighter text-white font-headline hover:opacity-80 transition-opacity flex items-center gap-2">SUTil <span className="text-blue-500 text-[10px] bg-blue-500/10 px-1 py-0.5 rounded uppercase tracking-widest">Beta</span></a>
+            </div>
+            <div className="hidden md:flex gap-8">
+              <a href="#tutoriales" className="text-slate-400 hover:text-white transition-colors font-semibold tracking-tight text-sm">Tutoriales</a>
+              <a href="#soporte" className="text-slate-400 hover:text-white transition-colors font-semibold tracking-tight text-sm">Soporte</a>
+              <a href="#privacidad" className="text-slate-400 hover:text-white transition-colors font-semibold tracking-tight text-sm">Privacidad</a>
             </div>
           </div>
           <div className="flex items-center gap-4">
             <button 
               onClick={onEnter}
-              className="px-5 py-2 bg-primary/10 text-primary font-bold hover:bg-primary/20 rounded-lg transition-all active:scale-95 duration-150 ease-in-out">
+              className="px-6 py-2.5 bg-blue-500/10 text-blue-400 font-black text-xs uppercase tracking-widest hover:bg-blue-500/20 rounded-lg transition-all active:scale-95 duration-150 ease-in-out">
               Abrir App
             </button>
           </div>
         </div>
-        <div className="bg-slate-100/50 dark:bg-slate-800/50 h-[1px] w-full absolute bottom-0"></div>
       </nav>
 
       <main>
