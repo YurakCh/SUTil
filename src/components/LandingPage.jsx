@@ -170,7 +170,7 @@ export default function LandingPage({ onEnter }) {
                     SUTil procesa tu información salarial directamente en tu computadora. No almacenamos, copiamos, ni enviamos a la nube las bases de datos o las cédulas de los trabajadores. Podrías desconectar el internet, y SUTil seguiría funcionando.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
-                  <a href="https://github.com" target="_blank" className="flex items-center gap-3 text-primary hover:text-primary-container transition-colors text-lg font-medium group">
+                  <a href="https://github.com/YurakCh/SUTil" target="_blank" className="flex items-center gap-3 text-primary hover:text-primary-container transition-colors text-lg font-medium group">
                     <span className="material-symbols-outlined text-3xl">code</span>
                     <span>Inspeccionar Código Fuente</span>
                   </a>
@@ -262,7 +262,7 @@ export default function LandingPage({ onEnter }) {
             <span className="text-slate-500 text-sm font-medium">SUTil - Tu SUT ya. Open-source para Ecuador.</span>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
-            <a href="https://github.com" target="_blank" className="text-slate-500 hover:text-primary transition-colors font-medium">GitHub</a>
+            <a href="https://github.com/YurakCh/SUTil" target="_blank" className="text-slate-500 hover:text-primary transition-colors font-medium">GitHub</a>
             <a href="#privacidad" className="text-slate-500 hover:text-primary transition-colors font-medium">Política de Privacidad</a>
             <span className="text-slate-400 font-medium">Versión Local B2.0</span>
           </div>
