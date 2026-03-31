@@ -1,0 +1,605 @@
+
+--- PAGE 1 ---
+Informe Individual sobre el pago de Décimotercera Remuneración
+
+NOMBRE O RAZÓN SOCIAL: PROVEEDOR DE TECNOLOGIA S.A PROSUPPLY
+
+R.U.C.: 1792388333001
+
+Imprimir
+ 
+Regresar
+ 
+Salir
+
+FORMULARIO N°
+ 
+DT02224207
+
+N
+ 
+CÉDULA
+ 
+APELLIDOS
+ 
+NOMBRES
+ 
+OCUPACIÓN
+ 
+GÉNERO
+ 
+DÍAS_TRABAJADOS
+ 
+TOTAL_GANADO
+ 
+RETENCIÓN
+ 
+VALOR_DÉCIMO
+ 
+FIRMA_O_HUELLA_DIG
+
+1
+ 
+1711198471
+ 
+AYALA SANTACRUZ
+ 
+DIEGO JAVIER
+ 
+1220000000001
+ 
+M
+ 
+360
+ 
+39600,00
+ 
+0,00
+ 
+3300,00
+ 
+ACRED. EN CUENTA
+
+2
+ 
+1724751282
+ 
+BENAVIDEZ ENCALADA
+ 
+RAMIRO JOHAO
+ 
+1209642000020
+ 
+M
+ 
+360
+ 
+10447,67
+ 
+0,00
+ 
+870,64
+ 
+ACRED. EN CUENTA
+
+3
+ 
+1721595682
+ 
+BONILLA CHANATAXI
+ 
+HOLGER ENRIQUE
+ 
+1220030001002
+ 
+M
+ 
+360
+ 
+13480,33
+ 
+0,00
+ 
+1123,36
+ 
+ACRED. EN CUENTA
+
+4
+ 
+1716987936
+ 
+CARANQUI FLORES
+ 
+GLADYS ALEXANDRA
+ 
+1920000000041
+ 
+F
+ 
+360
+ 
+7700,00
+ 
+0,00
+ 
+641,67
+ 
+ACRED. EN CUENTA
+
+5
+ 
+1716259377
+ 
+CHANGO LOZANO
+ 
+CARLOS ADRIAN
+ 
+1210000000007
+ 
+M
+ 
+360
+ 
+19800,00
+ 
+0,00
+ 
+1650,00
+ 
+ACRED. EN CUENTA
+
+6
+ 
+1719551705
+ 
+CHOTO CAISAGUANO
+ 
+CRISTIAN PATRICIO
+ 
+1210000000007
+ 
+M
+ 
+360
+ 
+16800,00
+ 
+0,00
+ 
+1400,00
+ 
+ACRED. EN CUENTA
+
+7
+ 
+1718122698
+ 
+CLAVIJO BAEZ
+ 
+EDWIN ISAAC
+ 
+1209642000020
+ 
+M
+ 
+360
+ 
+12033,83
+ 
+0,00
+ 
+1002,82
+ 
+ACRED. EN CUENTA
+
+8
+ 
+1723510291
+ 
+CUJI TIBAN
+ 
+EDGAR ALEXANDER
+ 
+1210000000007
+ 
+M
+ 
+360
+ 
+24000,00
+ 
+0,00
+ 
+2000,00
+ 
+ACRED. EN CUENTA
+
+9
+ 
+1804359238
+ 
+JACOME VIERA
+ 
+HUGO XAVIER
+ 
+1210000000007
+ 
+M
+ 
+360
+ 
+22400,00
+ 
+0,00
+ 
+1866,67
+ 
+ACRED. EN CUENTA
+
+10
+ 
+1719000794
+ 
+MEJIA ASTUDILLO
+ 
+ALEXANDRA CRISTINA
+ 
+1210000000007
+ 
+F
+ 
+360
+ 
+16800,00
+ 
+0,00
+ 
+1400,00
+ 
+ACRED. EN CUENTA
+
+11
+ 
+1312010026
+ 
+MERA ALARCON
+ 
+MAYRA ALEJANDRA
+ 
+1811749900045
+ 
+F
+ 
+360
+ 
+9600,00
+ 
+0,00
+ 
+800,00
+ 
+ACRED. EN CUENTA
+
+12
+ 
+1715215859
+ 
+MOLINA QUISHPE
+ 
+BYRON JAVIER
+ 
+1209642000020
+ 
+M
+ 
+360
+ 
+19000,00
+ 
+0,00
+ 
+1583,33
+ 
+ACRED. EN CUENTA
+
+13
+ 
+1715864375
+ 
+MONTOYA VITERI
+ 
+CARLOS ALBERTO
+ 
+1220030001002
+ 
+M
+ 
+360
+ 
+19732,87
+ 
+0,00
+ 
+1644,41
+ 
+ACRED. EN CUENTA
+
+14
+ 
+1717607277
+ 
+PEREZ LOPEZ
+ 
+NORA GABRIELA
+ 
+1930000000020
+ 
+F
+ 
+360
+ 
+36000,00
+ 
+0,00
+ 
+3000,00
+ 
+ACRED. EN CUENTA
+
+15
+ 
+1712333846
+ 
+RODRIGUEZ PARRE?O
+ 
+CHRISTIAN XAVIER
+ 
+1210000000007
+ 
+M
+ 
+360
+ 
+30000,00
+ 
+0,00
+ 
+2500,00
+ 
+ACRED. EN CUENTA
+
+16
+ 
+1754187472
+ 
+TIBAN MESTANZA
+ 
+STEVEN DANIEL
+ 
+1209642000023
+ 
+M
+ 
+360
+ 
+10588,59
+ 
+0,00
+ 
+882,38
+ 
+ACRED. EN CUENTA
+
+17
+ 
+1707923791
+ 
+TIBAN TATAYO
+ 
+MARIA INES
+ 
+1910000000036
+ 
+F
+ 
+360
+ 
+2815,00
+ 
+0,00
+ 
+234,58
+ 
+ACRED. EN CUENTA
+
+18
+ 
+1723787725
+ 
+VASCONEZ DIAZ
+ 
+DARIO GEOVANNY
+ 
+1209642000020
+ 
+M
+ 
+360
+ 
+10846,05
+ 
+0,00
+ 
+903,84
+ 
+ACRED. EN CUENTA
+
+19
+ 
+1709933376
+ 
+VILLACIS RUBIO
+ 
+JORGE MAURICIO
+ 
+1220030001002
+ 
+M
+ 
+360
+ 
+14285,16
+ 
+0,00
+ 
+1190,43
+ 
+ACRED. EN CUENTA
+
+DESCRIPCIÓN
+ 
+NÚMERO DE
+
+TRABAJADORES
+ 
+TOTALES
+
+Mujeres
+ 
+5
+ 
+6.076,25
+
+Hombres
+ 
+14
+ 
+21.917,88
+
+Con Discapacidad
+ 
+0
+ 
+0,00
+
+Artesanos
+ 
+0
+ 
+----
+
+Jornada Parcial Permanente
+ 
+0
+ 
+0,00
+
+Trabajadores que Acumulan
+ 
+19
+ 
+----
+
+Trabajadores que Mensualizan
+ 
+0
+ 
+----
+
+TOTAL PAGOS
+
+Retención Judicial
+ 
+0
+ 
+0,00
+
+Pagos Directos
+ 
+0
+ 
+0,00
+
+Acreditados en Cuenta
+ 
+19
+ 
+27.994,13
+--- PAGE 2 ---
+Total General
+ 
+19
+ 
+27.994,13
+
+Período Reportado:
+ 
+01/12/2024-30/11/2025
+
+-----------------------------------------------------------------------------
+
+ANDRADE PAZMIÑO ALBERTO XAVIER
+
+FIRMA DEL REPRESENTANTE LEGAL
+
+Declaro bajo juramento que la información contenida en el presente documento es verídica.
+
+Para registrar este proceso, debe presionar el Botón Enviar al MDT, que se encuentra al final de este formulario
+
+Resetear Formulario
+
+Enviar al MDT
+
+HISTORIAL DEL FORMULARIO
+
+DECLARACIÓN DE DÉCIMA TERCERA REMUNERACIÓN
+
+EMPLEADOR: PROVEEDOR DE TECNOLOGIA S.A PROSUPPLY
+
+RUC: 1792388333001
+
+FORMULARIO: DT02224207
+
+Estado Actual: D
+
+NÚMERO
+ 
+ESTADO
+ 
+OBSERVACION
+ 
+TIPO_USUARIO
+ 
+USUARIO
+ 
+FECHA
+
+1
+ 
+V
+ 
+ACTIVACION DE FORMULARIO
+ 
+EXTERNO
+ 
+1792388333001
+ 
+16/1/2026 10:39:47
+
+2
+ 
+D
+ 
+DECLARACIÓN CARGADA
+ 
+EXTERNO
+ 
+1792388333001
+ 
+16/1/2026 10:58:38
+
+Imprimir
+ 
+Regresar
+ 
+Salir
