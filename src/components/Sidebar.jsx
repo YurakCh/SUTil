@@ -46,7 +46,7 @@ export default function Sidebar({ employees, mode }) {
   const sinCargas = employees.filter(e => (parseInt(e.cargas) || 0) === 0).length;
   
   return (
-    <aside className="w-80 space-y-4 hidden xl:block shrink-0">
+    <aside className="w-80 h-full max-h-full flex flex-col space-y-4 hidden xl:flex shrink-0 overflow-y-auto custom-scrollbar pr-1 pb-10">
       <div className="bg-white border border-slate-200 rounded-lg overflow-hidden shadow-sm">
         <div className="px-4 py-3 border-b border-slate-100 flex items-center gap-2">
           <span className="material-symbols-outlined text-primary text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>auto_awesome</span>

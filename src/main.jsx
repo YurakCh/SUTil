@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import LandingPage from './components/LandingPage.jsx'
+import { initLogger } from './utils/logger'
 import './index.css'
+
+initLogger();
 
 function Router() {
   const [hash, setHash] = useState(window.location.hash);

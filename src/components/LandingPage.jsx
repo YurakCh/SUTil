@@ -3,11 +3,22 @@ import React, { useState } from 'react';
 export default function LandingPage({ onEnter }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [emailError, setEmailError] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+
+    // Email Validation (Regex)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email)) {
+      setEmailError(true);
+      setIsSubmitting(false);
+      return;
+    }
+    setEmailError(false);
     
     try {
       const response = await fetch("https://formsubmit.co/ajax/formsutil@yurakchalen.com", {
@@ -262,7 +273,14 @@ export default function LandingPage({ onEnter }) {
                       </div>
                       <div className="space-y-2">
                          <label className="text-sm font-semibold text-on-surface block">Correo de respuesta</label>
-                         <input type="email" name="email" required className="w-full bg-surface-container-lowest border border-outline-variant/50 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="juan@contabilidad.ec" />
+                         <input 
+                           type="email" 
+                           name="email" 
+                           required 
+                           className={`w-full bg-surface-container-lowest border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all ${emailError ? 'border-red-500' : 'border-outline-variant/50'}`} 
+                           placeholder="juan@contabilidad.ec" 
+                         />
+                         {emailError && <p className="text-[10px] text-red-500 font-bold uppercase tracking-widest mt-1">Formato de correo no válido</p>}
                       </div>
                    </div>
                    <div className="space-y-2">

@@ -14,7 +14,8 @@ import Sidebar from './components/Sidebar';
 import FiscalConfigModal from './components/FiscalConfigModal';
 import MappingModal from './components/MappingModal';
 import UtilitiesModal from './components/UtilitiesModal';
-import { Check, X, Upload } from 'lucide-react';
+import SupportModal from './components/SupportModal';
+import { Check, X, Upload, LifeBuoy } from 'lucide-react';
 
 import { detectMode, getSmartMappings, isConfidenceHigh, processRows, guessMappingsFromData, splitRow, findBestHeaderRow } from './logic/import-utils';
 import { parseSutPdf } from './logic/pdf-parser';
@@ -32,6 +33,7 @@ export default function App() {
   const [showFiscalConfig, setShowFiscalConfig] = useState(false);
   const [showMapping, setShowMapping] = useState(false);
   const [showUtilitiesModal, setShowUtilitiesModal] = useState(false);
+  const [showSupportModal, setShowSupportModal] = useState(false);
   const [utilitiesFormData, setUtilitiesFormData] = useState({});
   const [pdfRawRows, setPdfRawRows] = useState(null);
   const [initialMappings, setInitialMappings] = useState(null);
@@ -385,9 +387,15 @@ export default function App() {
             <span className="text-slate-400 text-[10px] font-medium border-l border-slate-200 pl-4 uppercase tracking-wider">v2.5.0 • Ecuador 2025</span>
           </div>
           <div className="flex items-center gap-6">
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Entorno Local Seguro</span>
+            <button 
+              onClick={() => setShowSupportModal(true)}
+              className="text-[10px] text-slate-500 hover:text-blue-600 font-black uppercase tracking-[0.2em] transition-colors underline decoration-slate-200 underline-offset-4 hover:decoration-blue-400"
+            >
+              Reportar un problema
+            </button>
+            <div className="flex items-center gap-4 border-l border-slate-200 pl-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              <span className="text-[10px] text-slate-500 font-black uppercase tracking-[0.2em]">Entorno Local Seguro</span>
             </div>
           </div>
         </div>
@@ -431,6 +439,10 @@ export default function App() {
           }}
           onCancel={() => setShowUtilitiesModal(false)}
         />
+      )}
+
+      {showSupportModal && (
+        <SupportModal onClose={() => setShowSupportModal(false)} />
       )}
 
       {importStatus && (

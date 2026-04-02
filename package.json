@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.0",
+    "html2canvas": "^1.4.1",
     "idb": "^8.0.0",
     "lucide-react": "^0.344.0",
     "pdfjs-dist": "^4.0.379",
