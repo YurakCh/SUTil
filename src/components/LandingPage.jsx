@@ -345,7 +345,7 @@ export default function LandingPage({ onEnter }) {
                <span className="material-symbols-outlined text-[18px]">policy</span>
                Privacidad
             </a>
-            <span className="text-slate-500 font-bold border-l border-slate-700 pl-6 md:pl-8 py-2 ml-2 md:ml-4">v2.5.0</span>
+            <span className="text-slate-500 font-bold border-l border-slate-700 pl-6 md:pl-8 py-2 ml-2 md:ml-4">v2.5.5</span>
           </div>
           
           <div className="flex items-center gap-3">

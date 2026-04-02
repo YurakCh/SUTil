@@ -384,7 +384,7 @@ export default function App() {
         <div className="flex justify-between items-center px-6 py-3">
           <div className="flex items-center gap-4">
             <a href="#" onClick={(e) => { e.preventDefault(); window.location.hash = ''; }} className="font-extrabold text-primary headline-font text-sm hover:opacity-80 transition-opacity cursor-pointer">SUTil</a>
-            <span className="text-slate-400 text-[10px] font-medium border-l border-slate-200 pl-4 uppercase tracking-wider">v2.5.0 • Ecuador 2025</span>
+            <span className="text-slate-400 text-[10px] font-medium border-l border-slate-200 pl-4 uppercase tracking-wider">v2.5.5 • Ecuador 2025</span>
           </div>
           <div className="flex items-center gap-6">
             <button 
