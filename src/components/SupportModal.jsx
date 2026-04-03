@@ -3,7 +3,7 @@ import { X, Loader2, Send, CheckCircle, Camera, Paperclip, Trash2, Image as Imag
 import html2canvas from 'html2canvas';
 import { getSystemLogs } from '../utils/logger';
 
-export default function SupportModal({ onClose }) {
+export default function SupportModal({ onClose, context }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -90,6 +90,7 @@ export default function SupportModal({ onClose }) {
       data.append('nombre', formData.name);
       data.append('email', formData.email);
       data.append('mensaje', formData.problem);
+      data.append('contexto_app', context || 'Desconocido');
       
       // 3. Adjuntos (Deben ir al final para mejor compatibilidad con FormSubmit)
       const logs = getSystemLogs();

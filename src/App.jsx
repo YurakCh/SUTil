@@ -442,7 +442,10 @@ export default function App() {
       )}
 
       {showSupportModal && (
-        <SupportModal onClose={() => setShowSupportModal(false)} />
+        <SupportModal 
+          onClose={() => setShowSupportModal(false)} 
+          context={`${mode === 'decimo3' ? 'Décimo Tercero' : mode === 'decimo4' ? 'Décimo Cuarto' : 'Utilidades'}${mode === 'decimo4' ? ` - ${region.toUpperCase()}` : ''} - ${fiscalYear}`}
+        />
       )}
 
       {importStatus && (
